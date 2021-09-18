@@ -1,12 +1,22 @@
 *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+body{
+    background-color: #d9dff8;
 }
 .container{
     width: 300px;
     height: 600px;
     border-radius: 50px;
     overflow: hidden;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin: 30px;
 }
 
 /* ProfilePage */
@@ -65,3 +75,113 @@
 
 
 
+
+/* Todo-page */
+.todo_page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f9faff;
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+
+/* TodoHeader */
+.todo_page .todo_header{
+    /* border: 1px solid red; */
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 25%;
+    padding-top: 40px;
+    color: #1e294e;
+}
+.todo_page .todo_header .headline{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: 650;
+}
+.todo_page .todo_header .hamburgur{
+    /* border: 1px solid green; */
+    width: 25px;
+    height: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    cursor: pointer;
+}
+.todo_page .todo_header .hamburgur .line{
+    /* position: absolute; */
+    height: 3px;
+    flex: 0 0 100%;
+    background-color: #1e294e57;
+}
+
+.todo_page .todo_header .search{
+    position: relative;
+    left: 230px;
+    top: -10px;
+    color: #1e294e57;
+    cursor: pointer;
+}
+.todo_page .todo_header .notification{
+    position: relative;
+    left: 200px;
+    top: -29px;
+    color: #1e294e57;
+    cursor: pointer;
+}
+
+
+/* ToDo Upperbody */
+.todo_page .todo_upperBody{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+.subheading{
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1e294e57;
+}
+.todo_page .todo_upperBody .taskCards{
+    margin: 10px 0px;
+    width: 110%;
+    height: 65%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: space-between;
+}
+.todo_page .todo_upperBody .taskCards .card{
+    border: 1px solid green;
+    border-radius: 20px;
+    margin-right: 20px;
+    flex: 0 0 50%;
+    background-color: white;
+    /* box-shadow: ; */
+}
+
+
+
+
+/*Todo tasks */
+.todo_page .tasks{
+    position: relative;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 50%;
+}
+.todo_page .tasks li{
+    border: 1px solid red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
