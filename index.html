@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <script defer src="app.js"></script>
 </head>
 
@@ -23,7 +22,7 @@
             </div>
 
             <div class="name_header">
-                <h1>Joy Mitchell</h1>
+                <h1>Joy <br> Mitchell</h1>
             </div>
             <div class="categories">
                 <div class="icons">
@@ -77,15 +76,35 @@
                     <li><input type="checkbox"> Daily meeting with team</li>
                     <li><input type="checkbox"> Daily meeting with team</li>
                     <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
+                    <li><input type="checkbox"> Daily meeting with team</li>
                 </ul>
             </div>
 
-            <div class="addBtn"></div>
+            <div class="addBtn">+</div>
         </div>
 
 
         <!-- Input-page -->
-        <div class="input_page"></div>
+        <div class="input_page">
+            <div class="crossbtn"> &times; </div>
+            <div class="inputbox">
+                <input type="text" placeholder="Enter new task">
+                <div class="radio_wrapper">    
+                    Today <input type="radio" name="date" checked>
+                </div>
+                <div class="radio_wrapper">    
+                    Tomorrow <input type="radio" name="date">
+                </div>
+            </div>
+            <button class="submitBtn">Add task</button>
+        </div>
+
+
     </div>
 </body>
 
