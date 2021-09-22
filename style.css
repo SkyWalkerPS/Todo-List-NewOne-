@@ -16,24 +16,31 @@ body{
     height: 600px;
     border-radius: 50px;
     overflow: hidden;
-    /* border: 1px solid black; */
+    border: 1px solid white;
+    background-color: #0e1f55;
     margin: 30px;
+    position: relative;
 }
+
+
+
+
 
 /* ProfilePage */
 .profile_page{
+    transition: all 0.6s ease;
     display: block;
+    position: absolute;
     color: white;
     width: 100%;
     height: 100%;
     background-color: #0e1f55;
     padding: 40px;
-    position: relative;
 }
 .profile_page .back_btn{
+    right: 36px;
     position: absolute;
     font-size: 40px;
-    right: 36px;
     top: 50px;
     cursor: pointer;
 }
@@ -79,15 +86,19 @@ body{
 
 
 
+
+
 /* Todo-page */
 .todo_page{
-    display: none;
-    position: relative;
+    transition: all 0.6s ease;
+    display: block; 
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: #f6f7ff;
     padding: 20px;
     user-select: none;
+    border-radius: 50px;
     /* border: 1px solid red; */
 }
 
@@ -174,10 +185,8 @@ body{
 
 
 
-
 /*Todo tasks */
 .todo_page .tasks{
-    /* border: 1px solid black; */
     position: relative;
     width: 100%;
     height: 47%;
@@ -214,11 +223,13 @@ body{
 
 
 
+
+
 /* Input-page */
 .input_page{
+    position: absolute;
     display: none;
     padding: 35px;
-    position: relative;
     height: 100%;
     width: 100%;
     background-color: white;
